@@ -14,7 +14,7 @@
         
         <form action="{% url 'checkin_page' %}" id="checkin-form" method="POST">
             {% csrf_token %}
-            <label for="" style="position: absolute; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: white; font-size: 30px; margin-top: -60px; margin-left: 75px; font-weight: bold">Employee Time Log In </label>
+            <label for="" style="position: absolute; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: black; font-size: 30px; margin-top: -60px; margin-left: 75px; font-weight: bold">Employee Time Log In </label>
             <input  type="text" id="employee-name" placeholder="Enter Employee ID/Name" name="employee_input" required>
             <button type="submit">Log in</button>
         </form>
