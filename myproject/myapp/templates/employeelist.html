@@ -12,6 +12,9 @@
 <form method="GET" action="{% url 'employeelist' %}" class="search-parent">
   <input type="search" name="search" placeholder="Search..." class="search" value="{{ request.GET.search }}" />
   <button type="submit">Search</button>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+  </svg>
   
 </form>
 
@@ -86,21 +89,23 @@ class="bx bx-user-plus"
 data-bs-toggle="modal" 
 data-bs-target="#signupModal"
 style="
-    width: 70px; 
-    height: 70px; 
+    width: 50px; 
+    height: 50px; 
     border-radius: 50%; 
     font-size: 24px; 
-    display: flex; 
     align-items: center; 
     justify-content: center; 
-   
+    position: absolute;
+    margin-right: 1095px;
     color: white; 
     border: none; 
-    cursor: pointer; 
-    ">
+    cursor: pointer;
+    margin-bottom: 760px; 
+    " >
     
 
 </button>
+<p style= "position: absolute; font-size: 13px; margin-right: 993px; margin-bottom: 710px; font-weight: 300; color: #8c8c8c;">Click to add employee...</p>
 </div>
 
 

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-image: linear-gradient(
+    45deg,
+    hsl(0deg 0% 95%) 0%,
+    hsl(344deg 0% 95%) 8%,
+    hsl(344deg 0% 96%) 17%,
+    hsl(344deg 0% 96%) 25%,
+    hsl(344deg 0% 97%) 33%,
+    hsl(344deg 0% 97%) 42%,
+    hsl(344deg 0% 97%) 50%,
+    hsl(344deg 0% 98%) 58%,
+    hsl(344deg 0% 98%) 67%,
+    hsl(344deg 0% 99%) 75%,
+    hsl(344deg 0% 99%) 83%,
+    hsl(344deg 0% 100%) 92%,
+    hsl(0deg 0% 100%) 100%
+  );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin: 50px 0 0 633px;
+}
+form {
+    margin-left: 1193px;
+}
+
+label {
+    display: none;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 7px 10px 7px 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: #0000cc;
+    cursor: pointer;
+}
+
+.table-container {
+    width: 90%;               
+    max-height: 300px;        
+    overflow-y: auto;         
+    margin: 30px auto;       
+    border-radius: 10px;      
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+  }
+  
+.table {
+    width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border: px solid #000000;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #000000;
+    text-align: left;
+    color: #ddd;
+    text-align: center;
+}
+
+.table tbody + tbody{
+    border-top: 2px solid #dee2e6;
+    overflow-y: scroll;
+    max-height: 500px;
+
+}
+
+.table th {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: rgb(32, 59, 232);
+}
+
+.table td {
+    text-align: center;
+}
+
+.table th[scope="row"] {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.Back_btn {
+    position: absolute;
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px 16px 6px 16px;
+    margin: -30px 0 0 80px;
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+}
+.Back_btn:hover {
+    cursor: pointer;
+    background-color: #0000cc;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 13px;
+    margin-left: 80px;
+    color: #666666;
+}
+.Logout_btn {
+    position: absolute;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 80px 7px 80px;
+    margin: 500px 0 0 650px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid white;
+}
+.Logout_btn:hover {
+    background-color: blue;
+    cursor: pointer;
+}

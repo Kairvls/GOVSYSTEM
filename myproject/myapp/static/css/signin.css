@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url(../images/ormoc-city-hall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    margin-left: 5px;
+    margin-top:-50px;
+    cursor: pointer;
+    position: relative;
+    max-width: 400px;
+    background-color: black;
+    opacity: 90%;
+    justify-content: center;
+    backdrop-filter: blur(33px);
+    align-items: center;
+    display: flex;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+   
+    
+}
+@keyframes animate {
+    from {
+        opacity: 1;
+        transform: translate(0, 100px);
+        backdrop-filter: blur(33px);
+    }
+    to {
+        opacity: 0;
+        transform: translate(0);
+        backdrop-filter: blur(0);
+    }
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(90deg, white, #f2f2f2 );
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 8s linear infinite;
+}
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 250px;
+    border-bottom: 2px solid white;
+}
+.inputbox label {
+    position: absolute;
+    top: 65%;
+    left: 0px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 14px;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -2px;
+}
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: white;
+}
+.forget {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 12px;
+    margin-right: -0px;
+    text-align: center;
+    font-family: aria;
+}
+a {
+    color: white;
+}
+button a {
+    text-decoration: none;
+}
+p {
+    position: absolute;
+    margin-left: 25px;
+    color: white;
+    font-size: 13px;
+}
+p a{
+    font-size: 12px;
+}
+button {
+    color: white;
+}
+button {
+    cursor: pointer;
+    position: relative;
+    background: blue;
+    border: none;
+    padding: 6px;
+    margin-left: 0px;
+    padding-left: 108px;
+    padding-right: 108px;
+    color: white;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: 0.3s;
+    text-decoration: none;
+    overflow: hidden;
+}
+button:hover {
+    background-color: #0000cc;
+    color: white;
+}
+button:hover a {
+    color: black;
+}
+button span {
+    position: absolute;
+    display: block;
+
+}
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f2f2f2);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f2f2f2);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f2f2f2);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+button span:nth-child(4) {
+    bottom: 100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f2f2f2);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+.register {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+.bi-person {
+    width: 20px;
+    height: 25px;
+    margin-bottom: -55px;
+    margin-left: 230px;
+}
+.bi-lock {
+    width: 20px;
+    height: 25px;
+    margin-bottom: -55px;
+    margin-left: 230px;
+}
+.search-box-hover .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box-hover .search-btn {
+    background: #fff;
+}
+video .src {
+    width: 1000;
+    height: 1000;
+}
+.back-btn {
+    width: 20px;
+    height: 20px;
+    color: #03e9f4;
+}
+h2 {
+    text-align: center;
+    font-size: 25px;
+    background-image: linear-gradient(90deg, white, gray);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 8s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position:0%;
+    }
+    100%{
+        background-position:400%;
+    }
+}

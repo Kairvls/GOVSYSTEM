@@ -17,9 +17,9 @@
 }
 
 .dark-mode {
-  --color-white: #000;
+  --color-white: #1a1a1a;
   --color-black: #fff;
-  --color-bg: #1d1b31;
+  --color-bg: white;
 }
 
 .sidebar {
@@ -42,19 +42,42 @@
 .nav-header {
   height: 60px;
   display: flex;
-  align-items: center;
+  position: absolute;
+  margin: 20px 0 0 12px;
   position: relative;
 }
 
 .nav-header .logo {
+  color: blue;
+  font-size: 23px;
+  font-weight: 600;
+  opacity: 0;
+  transition: var(--transition);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sidebar.expand .nav-header .logo {
+  opacity: 1;
+  transition: var(--transition);
+}
+.nav-header {
+  height: 60px;
+  display: flex;
+  position: absolute;
+  margin: 20px 0 0 12px;
+  position: relative;
+}
+
+.nav-header .logos {
   color: var(--color-black);
   font-size: 23px;
   font-weight: 600;
   opacity: 0;
   transition: var(--transition);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.sidebar.expand .nav-header .logo {
+.sidebar.expand .nav-header .logos {
   opacity: 1;
   transition: var(--transition);
 }
@@ -62,12 +85,10 @@
 .nav-header .btn-menu {
   position: absolute;
   color: var(--color-black);
-  top: 50%;
-  right: 0;
   transform: translateY(-50%);
-  font-size: 23px;
+  font-size: 26px;
   cursor: pointer;
-  margin-right: 10px;
+  margin: 18px 0 0 170px;
 }
 
 
@@ -294,9 +315,10 @@
 .home p {
   font-size: 20px;
   font-weight: 500;
-  color: var(--color-black);
+  color: black;
+  font-weight: bold;
+  margin: 20px 0 20px 65px;
   display: inline-block;
-  margin: 20px;
   white-space: nowrap;
 }
 .container {
@@ -342,6 +364,8 @@
 label {
   display: block;
   margin-top: 10px;
+  color: #b3b3b3;
+  margin-right: 3px;
 }
 
 input, select {
@@ -351,28 +375,36 @@ input, select {
 }
 
 .search{
-  width: 200px;
-  
+  padding: 4px 30px 5px 4px;
+  cursor: pointer;
+  margin-top: 35px;
 }
 .search-parent{
+  position: absolute;
+  margin-left: 175px;
+  margin-bottom: -15px;
+  
+
+}
+.bi-search {
+  width: 20px;
+  height: 20px;
   position: relative;
-  left:750px;
-  top: 50px;
-
-
+  margin-left: -108px;
+  margin-top: 0px;
 }
 
 
 button {
-  padding: 10px;
-  background-color: rgb(32, 59, 232);
+  padding: 5px 10px 6px 10px;
+  background-color: blue;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #0000cc;
 }
 
 /* Scrollable table container */
@@ -381,8 +413,8 @@ button:hover {
   max-height: 300px;        /* Height constraint to enable scrolling */
   overflow-y: auto;         /* Enables vertical scrolling */
   margin: 30px auto;        /* Centering and spacing */
-  border-radius: 10px;      /* Rounding table edges */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;      /* Rounding table edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 /* Table styling */
@@ -429,7 +461,7 @@ button:hover {
 }
 
 .table tr:hover {
-  background-color: rgb(32, 59, 232);
+  background-color: #0000cc;
 }
 
 .table td {
@@ -445,14 +477,14 @@ button:hover {
   margin: auto;
   margin-top: 55px;
   padding: 10px;
-  background-color: rgb(32, 59, 232);
+  background-color: blue;
   color: white;
   border: none;
   cursor: pointer;
   
 }
 button:hover {
-  background-color: #45a049;
+  background-color: #0000cc;
 }
 
 
@@ -474,7 +506,8 @@ button:hover {
   display:flex;
   color: #ddd;
   justify-content: end;
-  margin-right: 40px;
+  margin-right: 65px;
+  padding: 5px 0 5px 0;
 }
 
 .parent-calendar-employee{
@@ -486,30 +519,31 @@ button:hover {
 }
 
 .custom {
-  background-color: rgb(216, 216, 216);
+  background-color: white;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 20px 5px 20px rgba(0, 0, 0, 0.1);
-  width: 500px;
-  max-height: 900px;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  width: 600px;
+  max-height: 1000px;
   margin: 0 auto;
   margin-top: 25px;
   text-align: left;
 }
 
 .custom button {
-  background-color: rgb(32, 59, 232);
+  background-color: blue;
+  
   color: white;
   border: none;
   cursor: pointer;
   display:flex;
   margin-top: 10px;
-  margin-left: 20rem;
+  margin-left: 27.5rem;
   
 }
 
 .custom button:hover {
-  background-color: #45a049;
+  background-color: #0000cc;
 }
 
 

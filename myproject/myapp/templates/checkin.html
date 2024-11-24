@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attendance System</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/outside.css' %}">
+    <link rel="stylesheet" href="{% static 'css/timein.css' %}">
 </head>
 
 <body>
@@ -13,9 +13,8 @@
     <div class="form-container">
         
         <form action="{% url 'checkin_page' %}" id="checkin-form" method="POST">
-            <img src="../static/images/ormoclogo.png" style="position:absolute; width:60px; height:60px; margin-left:1450px; margin-top:10px;">
             {% csrf_token %}
-            <label for="employee_input">Enter Employee ID or Name (First Last): </label>
+            <label for="" style="position: absolute; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: white; font-size: 30px; margin-top: -60px; margin-left: 75px; font-weight: bold">Employee Time Log In </label>
             <input  type="text" id="employee-name" placeholder="Enter Employee ID/Name" name="employee_input" required>
             <button type="submit">Log in</button>
         </form>
